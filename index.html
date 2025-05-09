@@ -1,113 +1,160 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hyper Zero</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hyper Zero - Gaming Community</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background: url('https://t4.ftcdn.net/jpg/05/18/41/91/360_F_518419158_yXXBww2r5Z3XoutBxRX8KHNZOpPjhC03.jpg') no-repeat center center fixed;
+            background: url('https://cdn.discordapp.com/attachments/1370102644470714369/1370102690712916059/b159dcb12e263619114705765d623ec1.jpg?ex=681e4710&is=681cf590&hm=df5ea42cae8045acf24b446290a10c83d69cae49faeb112af8989f84b370ef1f&') no-repeat center center fixed;
             background-size: cover;
             color: #fff;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 20px 20px;
-            background: rgba(0, 0, 0, 0.6);
-        }
-
-        header h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 3rem;
             margin: 0;
-            color: #00ffff;
-            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+            padding: 0;
         }
 
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .container {
+            max-width: 1200px;
+            margin: auto;
             padding: 20px;
         }
 
-        .box {
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-            padding: 20px;
-            max-width: 500px;
-            width: 90%;
-            margin: 20px 0;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        h1 {
             text-align: center;
-            position: relative;
+            font-size: 3rem;
+            margin: 20px 0;
         }
 
-        .box img {
+        .section {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .games img {
             width: 50px;
             height: 50px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+            margin: 10px;
         }
 
-        iframe {
+        .rules ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .rules li {
+            margin: 10px 0;
+        }
+
+        .join-button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background: #7289da;
+            color: white;
             border: none;
-            border-radius: 20px;
-            width: 100%;
-            max-width: 350px;
-            height: 500px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .join-button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .appeal-link {
+            display: block;
+            text-align: center;
             margin: 20px 0;
+        }
+
+        .appeal-link a {
+            color: #7289da;
+            text-decoration: none;
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            font-size: 0.9em;
-            color: #ccc;
-            background: rgba(0, 0, 0, 0.6);
-            margin-top: 30px;
+            background-color: #1a1a1a;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Hyper Zero</h1>
-    </header>
-
-    <main>
-        <div class="box">
-            <img src="https://cdn.discordapp.com/attachments/1370102644470714369/1370102690712916059/b159dcb12e263619114705765d623ec1.jpg" alt="Server Icon" />
-            <p>Hyper Zero is a chill gaming server where players can hang out, make friends, and enjoy games together. We're just getting started and looking forward to growing the community!</p>
+    <div class="container">
+        <!-- Landing/Home Section -->
+        <div class="section">
+            <h1>Welcome to Hyper Zero</h1>
+            <p style="text-align: center;">The home of competitive and casual gamers alike!</p>
+            <iframe src="https://discord.com/widget?id=1369953133819858944&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
 
-        <div class="box">
-            <img src="https://cdn.discordapp.com/attachments/1370102644470714369/1370104614346555514/cdc33a6a272eafd95a6443e3b8629595.jpg" alt="About" />
-            <p>We aim to create a welcoming space for gamers of all levels. Join us and be part of building something awesome from the ground up!</p>
+        <!-- About Section -->
+        <div class="section">
+            <h2>About Us</h2>
+            <p>Hyper Zero is a dynamic Discord community where gamers from all over the world come together to play and compete. Whether you’re into casual play or looking for a team to dominate, you’ll find a place here!</p>
+            <p><strong>Founder:</strong> <a href="https://discord.com/users/ghos09._">ghos09._</a></p>
         </div>
 
-        <div class="box">
-            <img src="https://cdn.discordapp.com/attachments/1370102644470714369/1370104623901179944/e1bfae558ae51c85c42b0a61b1229e22.jpg" alt="Goals" />
-            <p>Our goals include community growth, fun game nights, and collaborating with other servers. Stay tuned for future events and activities!</p>
+        <!-- Games We Play Section -->
+        <div class="section">
+            <h2>Games We Play</h2>
+            <div class="games">
+                <img src="https://img.icons8.com/ios/50/000000/call-of-duty.png" alt="Black Ops 6">
+                <img src="https://img.icons8.com/ios/50/000000/minecraft.png" alt="Minecraft">
+                <img src="https://img.icons8.com/ios/50/000000/genshin-impact.png" alt="Genshin Impact">
+                <img src="https://img.icons8.com/ios/50/000000/roblox.png" alt="Roblox">
+                <img src="https://img.icons8.com/ios/50/000000/fortnite.png" alt="Fortnite">
+                <img src="https://img.icons8.com/ios/50/000000/halo.png" alt="Delta Force">
+            </div>
         </div>
 
-        <div class="box">
-            <img src="https://cdn.discordapp.com/attachments/1370102644470714369/1370104957318991933/c94367e107ee3c63a14ef1164479726f.jpg" alt="Partners" />
-            <p>We're open to partnerships with like-minded servers and creators. DM us if you're interested in partnering up!</p>
+        <!-- Rules & Guidelines Section -->
+        <div class="section rules">
+            <h2>Rules & Guidelines</h2>
+            <ul>
+                <li>Respect others.</li>
+                <li>No cheating or exploiting.</li>
+                <li>Keep the chat family-friendly.</li>
+                <li>Follow Discord TOS and Hyper Zero's community guidelines.</li>
+            </ul>
         </div>
 
-        <iframe src="https://discord.com/widget?id=1369953133819858944&theme=dark" allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </main>
+        <!-- Leveling Section -->
+        <div class="section">
+            <h2>Leveling</h2>
+            <p>Level up by chatting and participating! The more active you are, the higher your level. Use Maki bot to track your progress!</p>
+            <p><strong>Level Ranks:</strong> 1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100</p>
+        </div>
 
+        <!-- Appeal Section -->
+        <div class="appeal-link">
+            <p>Need help or got punished unfairly? <a href="https://appeal.gg/szrP9mB9tX">Appeal here!</a></p>
+        </div>
+
+        <!-- Join Button Section -->
+        <div class="join-button">
+            <a href="https://discord.gg/szrP9mB9tX">Join Hyper Zero Now!</a>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
     <footer>
-        &copy; 2025 Hyper Zero. All rights reserved.
+        <p>&copy; 2025 Hyper Zero Gaming Community | Made with ❤️</p>
     </footer>
 </body>
 </html>
