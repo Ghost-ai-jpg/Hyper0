@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('https://cdn.discordapp.com/attachments/1370102644470714369/1370102690712916059/b159dcb12e263619114705765d623ec1.jpg?ex=681e4710&is=681cf590&hm=df5ea42cae8045acf24b446290a10c83d69cae49faeb112af8989f84b370ef1f&') no-repeat center center fixed;
+            background: url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
             background-size: cover;
             color: #fff;
             margin: 0;
@@ -41,10 +41,14 @@
             margin-bottom: 10px;
         }
 
-        .games img {
-            width: 50px;
-            height: 50px;
-            margin: 10px;
+        .games {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .games p {
+            font-size: 1.2rem;
+            margin: 10px 0;
         }
 
         .rules ul {
@@ -91,13 +95,25 @@
             background-color: #1a1a1a;
             margin-top: 40px;
         }
+
+        .faq-item {
+            margin: 15px 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .faq-item h3 {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Landing/Home Section -->
         <div class="section">
-            <h1>Welcome to Hyper Zero</h1>
+            <h1><img src="https://cdn.discordapp.com/attachments/1370102644470714369/1370102690712916059/b159dcb12e263619114705765d623ec1.jpg?ex=681e4710&is=681cf590&hm=df5ea42cae8045acf24b446290a10c83d69cae49faeb112af8989f84b370ef1f&" alt="Hyper Zero Icon" width="40" height="40"> Welcome to Hyper Zero</h1>
             <p style="text-align: center;">The home of competitive and casual gamers alike!</p>
             <iframe src="https://discord.com/widget?id=1369953133819858944&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
@@ -110,16 +126,14 @@
         </div>
 
         <!-- Games We Play Section -->
-        <div class="section">
+        <div class="section games">
             <h2>Games We Play</h2>
-            <div class="games">
-                <img src="https://img.icons8.com/ios/50/000000/call-of-duty.png" alt="Black Ops 6">
-                <img src="https://img.icons8.com/ios/50/000000/minecraft.png" alt="Minecraft">
-                <img src="https://img.icons8.com/ios/50/000000/genshin-impact.png" alt="Genshin Impact">
-                <img src="https://img.icons8.com/ios/50/000000/roblox.png" alt="Roblox">
-                <img src="https://img.icons8.com/ios/50/000000/fortnite.png" alt="Fortnite">
-                <img src="https://img.icons8.com/ios/50/000000/halo.png" alt="Delta Force">
-            </div>
+            <p>Black Ops 6</p>
+            <p>Minecraft</p>
+            <p>Genshin Impact</p>
+            <p>Roblox</p>
+            <p>Fortnite</p>
+            <p>Delta Force</p>
         </div>
 
         <!-- Rules & Guidelines Section -->
@@ -133,16 +147,24 @@
             </ul>
         </div>
 
-        <!-- Leveling Section -->
+        <!-- FAQ Section -->
         <div class="section">
-            <h2>Leveling</h2>
-            <p>Level up by chatting and participating! The more active you are, the higher your level. Use Maki bot to track your progress!</p>
-            <p><strong>Level Ranks:</strong> 1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100</p>
-        </div>
+            <h2>FAQ</h2>
 
-        <!-- Appeal Section -->
-        <div class="appeal-link">
-            <p>Need help or got punished unfairly? <a href="https://appeal.gg/szrP9mB9tX">Appeal here!</a></p>
+            <div class="faq-item">
+                <h3>How can I level up in the server?</h3>
+                <p>Leveling up is done using the Maki bot! The more you interact in the server, the higher your level goes. The ranks are: 1, 10, 20, 30, 40, 50, 60, 70, 80, 90, and 100.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I appeal if I'm punished?</h3>
+                <p>If you feel that you've been punished unfairly, you can submit an appeal at <a href="https://appeal.gg/szrP9mB9tX">this link</a>.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I join the server?</h3>
+                <p>Click the button below to join our Discord server and start your journey with us!</p>
+            </div>
         </div>
 
         <!-- Join Button Section -->
@@ -154,7 +176,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Hyper Zero Gaming Community | Made with ❤️</p>
+        <p>&copy; 2025 Hyper Zero Gaming Community</p>
     </footer>
 </body>
 </html>
