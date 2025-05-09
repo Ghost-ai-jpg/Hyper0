@@ -1,182 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hyper Zero - Gaming Community</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyper Zero</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
-            background: url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
             margin: 0;
             padding: 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
+            font-family: 'Montserrat', sans-serif; /* Used as a fallback since Etna isn't on Google Fonts */
+            background: url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
         }
 
         h1 {
-            text-align: center;
-            font-size: 3rem;
-            margin: 20px 0;
-        }
-
-        .section {
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-        }
-
-        .section h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .games {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .games p {
-            font-size: 1.2rem;
-            margin: 10px 0;
-        }
-
-        .rules ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .rules li {
-            margin: 10px 0;
+            font-size: 4rem;
+            margin: 20px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
 
         .join-button {
-            display: block;
-            margin: 20px auto;
-            padding: 15px 30px;
-            background: #7289da;
-            color: white;
-            border: none;
-            font-size: 1.2rem;
-            cursor: pointer;
-            text-align: center;
-            border-radius: 5px;
-        }
-
-        .join-button a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            font-size: 1.5rem;
             color: white;
             text-decoration: none;
-        }
-
-        .appeal-link {
-            display: block;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .appeal-link a {
-            color: #7289da;
-            text-decoration: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1a1a1a;
-            margin-top: 40px;
-        }
-
-        .faq-item {
-            margin: 15px 0;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.6);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px white;
+            transition: all 0.3s ease;
         }
 
-        .faq-item h3 {
-            margin-bottom: 10px;
+        .join-button:hover {
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 30px white;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Landing/Home Section -->
-        <div class="section">
-            <h1><img src="https://cdn.discordapp.com/attachments/1370102644470714369/1370102690712916059/b159dcb12e263619114705765d623ec1.jpg?ex=681e4710&is=681cf590&hm=df5ea42cae8045acf24b446290a10c83d69cae49faeb112af8989f84b370ef1f&" alt="Hyper Zero Icon" width="40" height="40"> Welcome to Hyper Zero</h1>
-            <p style="text-align: center;">The home of competitive and casual gamers alike!</p>
-            <iframe src="https://discord.com/widget?id=1369953133819858944&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-
-        <!-- About Section -->
-        <div class="section">
-            <h2>About Us</h2>
-            <p>Hyper Zero is a dynamic Discord community where gamers from all over the world come together to play and compete. Whether you’re into casual play or looking for a team to dominate, you’ll find a place here!</p>
-            <p><strong>Founder:</strong> <a href="https://discord.com/users/ghos09._">ghos09._</a></p>
-        </div>
-
-        <!-- Games We Play Section -->
-        <div class="section games">
-            <h2>Games We Play</h2>
-            <p>Black Ops 6</p>
-            <p>Minecraft</p>
-            <p>Genshin Impact</p>
-            <p>Roblox</p>
-            <p>Fortnite</p>
-            <p>Delta Force</p>
-        </div>
-
-        <!-- Rules & Guidelines Section -->
-        <div class="section rules">
-            <h2>Rules & Guidelines</h2>
-            <ul>
-                <li>Respect others.</li>
-                <li>No cheating or exploiting.</li>
-                <li>Keep the chat family-friendly.</li>
-                <li>Follow Discord TOS and Hyper Zero's community guidelines.</li>
-            </ul>
-        </div>
-
-        <!-- FAQ Section -->
-        <div class="section">
-            <h2>FAQ</h2>
-
-            <div class="faq-item">
-                <h3>How can I level up in the server?</h3>
-                <p>Leveling up is done using the Maki bot! The more you interact in the server, the higher your level goes. The ranks are: 1, 10, 20, 30, 40, 50, 60, 70, 80, 90, and 100.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Can I appeal if I'm punished?</h3>
-                <p>If you feel that you've been punished unfairly, you can submit an appeal at <a href="https://appeal.gg/szrP9mB9tX">this link</a>.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>How do I join the server?</h3>
-                <p>Click the button below to join our Discord server and start your journey with us!</p>
-            </div>
-        </div>
-
-        <!-- Join Button Section -->
-        <div class="join-button">
-            <a href="https://discord.gg/szrP9mB9tX">Join Hyper Zero Now!</a>
-        </div>
-
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Hyper Zero Gaming Community</p>
-    </footer>
+    <h1>HYPER ZERO</h1>
+    <a class="join-button" href="https://discord.gg/szrP9mB9tX" target="_blank">JOIN NOW</a>
 </body>
 </html>
